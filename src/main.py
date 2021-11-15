@@ -8,11 +8,12 @@ from transformers import pipeline
 import jwt
 from parsing import getUrls
 
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Aizhan1212@localhost/PythonAssignment'
 app.config['SECRET_KEY'] = 'thisismyflasksecretkey'
 db = SQLAlchemy(app)
+token_save = ""
+
 
 class Users(db.Model):
 	__tablename__ = 'users'
@@ -20,7 +21,7 @@ class Users(db.Model):
 	login = db.Column('login', db.Unicode)
 	password = db.Column('password', db.Unicode)
 	token = db.Column('token', db.Unicode)
-	def __init__(self, login, password, token):
+	def __init__(self, id, login, password, token):
 		self.login = login
 		self.password = password
 		self.token = token
@@ -33,19 +34,18 @@ class Store(db.Model):
 	def __init__(self, id, articles, summaries):
 		self.articles = articles
 		self.summaries = summaries
-
-
 		
 def token_required(f):
 	@wraps(f)
 	def decorated(*args, **kwargs):
 		find_token = request.args.get('token')
-		print(find_token)
 		if not find_token:
-			return jsonify({'message' : 'Token is missing'}), 403
+			return '''<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <h1 class="text-warning"> Token is missing </h1>''', 403
 		real = Users.query.filter_by(token = find_token).first()
 		if real is None:
-			return "<h1> Hello, Could not verify the token </h1>"
+			return '''<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <h1 class="text-danger"> Could not verify the token </h1>'''
 		return f(*args, **kwargs)
 	return decorated
 
@@ -53,10 +53,30 @@ def token_required(f):
 def home():
 	return render_template('home.html')
 
+@app.route('/token')
+def token():
+	return '<h3>This is current token:<h3>' + token_save
+
+
 @app.route('/protected')
 @token_required
 def protected():
-	return "<h1> Hello, token which is provided is correct </h1>"
+	return '''
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<div class="container d-flex align-items-center justify-content-center" style="height: 600px">
+		<div class="row text-center">
+			<div>
+				<h1 class="text-success" class="font-size: 60px"> Success </h1>
+				<p class="text-success" style="font-size: 40px"> Token is correct </p>
+				<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_4qldwfx4.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" autoplay></lottie-player>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+	'''
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -65,6 +85,8 @@ def login():
 		usernamedata = Users.query.filter_by(login = request.form['username'], password = request.form['password']).first()
 		if usernamedata is not None: 
 			token = jwt.encode({'user': usernamedata.login, 'exp':datetime.utcnow() + timedelta(minutes=15)}, app.config['SECRET_KEY'])
+			global token_save 
+			token_save = token
 			print(token)
 			update_token = Users.query.filter_by(id = usernamedata.id).first()
 			token2 = token
@@ -75,6 +97,31 @@ def login():
 			error = 'Invalid login or password!'
 			return render_template('login.html', error = error)
 	return render_template('login.html')
+
+
+@app.route('/registration', methods=['GET', 'POST'])
+def registration():
+	if request.method == 'POST':
+		usernamedata = Users.query.filter_by(login = request.form['username']).first()
+		user = request.form['username']
+		passw = request.form['password']
+		passw2 = request.form['password2']
+		if user == "" or passw == "" or passw2 == "":
+		 	error = 'Please fill all blanks'
+		 	return render_template('registration.html', error = error)	
+		if passw != passw2:
+		 	error = 'Password mismatch'
+		 	return render_template('registration.html', error = error)
+		if usernamedata is None: 
+			info = Users(int, user, passw, "")
+			db.session.add(info)
+			db.session.commit()
+			success = 'Successfully registered!'
+			return render_template('registration.html', success = success)
+		else:
+			error = 'This user already exists'
+			return render_template('registration.html', error = error)
+	return render_template('registration.html')	
 
 
 @app.route('/coin', methods=['GET', 'POST'])
@@ -129,7 +176,6 @@ def coin():
 		db.session.add(info)
 		db.session.commit()
 		str_answer = Store.query.filter_by(summaries = TOTAL_SUMMARY).first()
-		db.session.commit()
 		return '''
 				<!DOCTYPE html>
 				<html lang="en">	

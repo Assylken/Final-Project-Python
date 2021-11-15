@@ -14,24 +14,26 @@
   <div class="container d-flex align-items-center justify-content-center" style="height: 600px;">
     <div class="row align-items-center">
     <lottie-player class="col" src="https://assets6.lottiefiles.com/packages/lf20_mragdxra.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"   autoplay></lottie-player>
-    <form class="col" action="login" method='POST'>
+    <form style="border: 2px solid royalblue; border-radius: 20px; height: 280px;"  class="col" action="login" method='POST'>
+      <h2 style="color: royalblue"> Login Form</h2>
       <div class="form-group">
         <label>
-          <h3 style="color: dodgerblue">Username</h3>
+          <h4 style="color: dodgerblue">Username</h4>
         </label>
         <input name="username" type="username" class="form-control" id="exampleInputUsername" placeholder="Username">
       </div>
       <div class="form-group">
         <label>
-          <h3 style="color: dodgerblue">Password</h3>
+          <h4 style="color: dodgerblue">Password</h4>
         </label>
         <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
       <div>
         <span class="text-danger">{{error}}</span>
       </div>
-      <div>
-        <button type="submit" class="btn btn-primary mt-2">Enter </button>
+      <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary mt-2"> Log in </button>
+        <a href="registration" type="submit" class="btn btn-secondary mt-2"> Register </a>
       </div>
     </form>
     <lottie-player class="col"  src="https://assets6.lottiefiles.com/packages/lf20_q5pk6p1k.json" background="transparent" speed="1"

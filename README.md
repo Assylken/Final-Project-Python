@@ -24,7 +24,7 @@ import jwt
 
 ### Examples
 If you want to read more about project:
-All necessary information about this project here: -> https://prezi.com/p/rl-a9vtb6uwf
-![all_text](![20945660](https://user-images.githubusercontent.com/79912262/141840872-bff2d454-4efa-4ac3-97df-5f233b63e35b.jpg))
+All necessary information about this project here: -> https://prezi.com/p/rl-a9vtb6uwf <br>
+![all_text](https://user-images.githubusercontent.com/79912262/141840872-bff2d454-4efa-4ac3-97df-5f233b63e35b.jpg)
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

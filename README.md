@@ -23,12 +23,8 @@ import jwt
 ```
 
 ### Examples
-(/login, /register) - Login and Registration pages. Store in PostgreSQL db. 
-![alt text](![image](https://user-images.githubusercontent.com/79912262/141839589-bcbd6219-eec9-43d9-ba69-53135bcf4bbf.png))
-![image](![image](https://user-images.githubusercontent.com/79912262/141839842-dda17baf-6a55-4e91-97c2-259a438e7cfd.png))
-(/protected) - On this page you can check the validation of your token
-![image](![image](https://user-images.githubusercontent.com/79912262/141839842-dda17baf-6a55-4e91-97c2-259a438e7cfd.png))
-![image](https://user-images.githubusercontent.com/79912262/138473334-88d2cb9d-20bd-4a95-be9e-354d20ce0ab9.png)
-
+If you want to read more about project:
+All necessary information about this project here: -> https://prezi.com/p/rl-a9vtb6uwf
+![image](![20945660](https://user-images.githubusercontent.com/79912262/141840872-bff2d454-4efa-4ac3-97df-5f233b63e35b.jpg))
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

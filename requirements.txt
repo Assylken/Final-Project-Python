@@ -1,0 +1,6 @@
+flask (https://flask.palletsprojects.com/en/2.0.x/)
+flask_sqlalchemy (https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+requests  (https://pypi.org/project/requests/)
+beautifulSoup (https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+tensorflow (https://www.tensorflow.org/install/pip)
+transformers (https://huggingface.co/transformers/installation.html)

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Qazaq Study</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="spinner">
+        <item>Colours</item>
+        <item>Food and drinks</item>
+        <item>Numbers</item>
+        <item>Shopping and services</item>
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>

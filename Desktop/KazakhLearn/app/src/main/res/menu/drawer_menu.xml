@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_learn"
+            android:icon="@drawable/ic_book_24dp"
+            android:title="Learning" />
+
+        <item
+            android:id="@+id/nav_my_dictionary"
+            android:icon="@drawable/ic_my_dictionary"
+            android:title="My dictionary" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_24dp"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/logo"
+            android:title="Quiz"/>
+
+        <item
+            android:id="@+id/nav_translation"
+            android:icon="@drawable/ic_translation_24dp"
+            android:title="Cyrillic to Latin translation" />
+
+        <item
+            android:id="@+id/nav_content"
+            android:icon="@drawable/ic_baseline_videocam_24"
+            android:title="Videos" />
+
+        <item
+            android:id="@+id/nav_tech_support"
+            android:icon="@drawable/ic_build"
+            android:title="Tech Support" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send_24dp"
+                android:title="Send" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_24dp"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>

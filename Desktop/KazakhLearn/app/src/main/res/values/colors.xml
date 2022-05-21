@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2193b0</color>
+    <color name="colorPrimaryDark">#6dd5ed</color>
+    <color name="colorAccent">#39CDFF</color>
+
+    <color name="address">#2F7092</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="followersBg">#65DCE5</color>
+    <color name="grey">#E5E5E5</color>
+
+    <color name="Black">#000</color>
+    <color name="Black50">#80000000</color>
+    <color name="Black75">#BF000000</color>
+
+    <color name="White">#fff</color>
+    <color name="White50">#80FFFFFF</color>
+    <color name="White75">#BFFFFFFF</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+</resources>

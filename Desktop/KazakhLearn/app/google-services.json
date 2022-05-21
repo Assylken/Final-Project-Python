@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "985030625568",
+    "firebase_url": "https://kazakhenglishstudy.firebaseio.com",
+    "project_id": "kazakhenglishstudy",
+    "storage_bucket": "kazakhenglishstudy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985030625568:android:8f5269481760e37c67af45",
+        "android_client_info": {
+          "package_name": "kz.adilet.kazakhlearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985030625568-hqfee3la1gvbivb138b9lorgfag0ucl6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kz.adilet.kazakhlearn",
+            "certificate_hash": "5c7d31afd3568fdaf6051aaf724ed070f2602b64"
+          }
+        },
+        {
+          "client_id": "985030625568-j29t5s62m27vii9bqraojki7e6lg7jug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjurPgvvTPRfrFMz0xQP6DsILHVv3vbb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985030625568-j29t5s62m27vii9bqraojki7e6lg7jug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

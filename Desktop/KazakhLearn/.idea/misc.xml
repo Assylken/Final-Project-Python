@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/drawable/gradient_bg.xml" value="0.103" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/drawable/rounded_bg_gradient.xml" value="0.103" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/drawable/rounded_button_correct.xml" value="0.103" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/activity_admin.xml" value="0.33" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/activity_favourite_viewed.xml" value="0.3175925925925926" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/activity_login.xml" value="0.3175925925925926" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/activity_main.xml" value="0.3175925925925926" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/activity_profile_change.xml" value="0.32576985413290116" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/activity_search.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/activity_sign_up.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/day_word.xml" value="0.33" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/example_item_list.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/favourite_viewed_item_list.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/fragment_content.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/fragment_learning.xml" value="0.33" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/fragment_my_dictionary.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/fragment_profile.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/fragment_quiz.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/fragment_translation.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/fragment_user_tech_support.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/image_view_custom_dialog.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/meaning_item_list.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/my_dictionary_item_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/nav_header.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/search_item_list.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/spinner_text.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/asylk/Desktop/KazakhLearn/app/src/main/res/layout/tech_support_item_list.xml" value="0.2222222222222222" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

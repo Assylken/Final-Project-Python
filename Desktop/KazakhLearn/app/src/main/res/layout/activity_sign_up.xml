@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/gradient_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:layout_width="325dp"
+            android:layout_height="256dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edit_text_50_opacity_white"
+                android:padding="15dp"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/White"
+                android:drawableStart="@drawable/ic_email"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:maxLines="1"/>
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Username"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_50_opacity_white"
+                android:padding="15dp"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/White"
+                android:drawableStart="@drawable/ic_account_circle_blue"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:maxLength="25"
+                android:maxLines="1"/>
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_50_opacity_white"
+                android:padding="15dp"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/White"
+                android:drawableStart="@drawable/ic_lock"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:maxLength="18"
+                android:maxLines="1"/>
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/buttonSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_transparent"
+                android:textAllCaps="false"
+                android:text="Create account"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+                app:spinning_bar_width="4dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Have already an account? Login here"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/White75"  />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
